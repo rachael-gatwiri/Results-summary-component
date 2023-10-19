@@ -1,4 +1,3 @@
-
-../fonts
-./design
-./style-guide.md
+assets/fonts
+design
+style-guide.md
