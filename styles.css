@@ -14,7 +14,10 @@ body p {
 main{
     display: flex;
     justify-content: center;
-    margin: 120px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 100px;
+
 }
 .section1{
     background-color: hsl(252, 100%, 67%);
@@ -153,25 +156,108 @@ color:  hsl(234, 85%, 45%);
     padding: 8px 90px;
     background-color: hsl(228, 72%, 15%);
     border: none; 
-    margin:0  30px;
+    display: flex;
+    margin: auto;
     color: rgb(249, 247, 245);
     font-weight: 900;
 }
 .btn:hover{
     background-color: hsl(252, 90%, 58%);
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 72%, 15%); }
+.attribution { 
+    font-size: 18px; 
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+.attribution a {
+     color: hsl(228, 72%, 15%); 
+    }
 
-@media only screen and (max-device-width: 375px) and (min-device-width: 1440px) {
+
+@media screen and (max-width: 1024px) {
+    /* the sections should occupy the entire height above the .attribution */
     main{
         display: flex;
         flex-direction: column;
+        margin: 10px;
     }
     .section1{
-        width: 80%;
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    .section1Total{
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
     .section2{
-        width: 80%;
+        width: 100%;
+        border-radius: 10px;
+        height: 100%;
+    }
+    .section2 h2{
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+    .section2Total1{
+        margin-bottom: 20px;
+    }
+    .section2Total2{
+        margin-bottom: 20px;
+    }
+    .section2Total3{
+        margin-bottom: 20px;
+    }
+    .section2Total4{
+        margin-bottom: 20px;
+    }
+    .btn{
+        padding: 8px 50px;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .section1{
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    .section1Total{
+        margin: auto; 
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .section2{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .section2 h2{
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+    .section2Total1{
+        margin-bottom: 20px;
+    }
+    .section2Total2{
+        margin-bottom: 20px;
+    }
+    .section2Total3{
+        margin-bottom: 20px;
+    }
+    .section2Total4{
+        margin-bottom: 20px;
+    }
+    .btn{
+        padding: 8px 50px;
+    }
+}
+
